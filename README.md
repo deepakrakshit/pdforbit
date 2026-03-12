@@ -78,9 +78,39 @@ The app will be available at `http://localhost:3000`.
 
 ## Screenshots
 
-![Homepage](docs/images/homepage.png)
-![Tool Grid](docs/images/tools.png)
-![Pricing](docs/images/pricing.png)
+### Homepage
+
+<p align="center">
+  <img src="docs/images/homepage.png" width="90%" alt="PdfORBIT Homepage">
+</p>
+
+<p align="center">
+  Clean landing page with product overview and quick access to tools.
+</p>
+
+---
+
+### Tool Grid
+
+<p align="center">
+  <img src="docs/images/tools.png" width="90%" alt="PdfORBIT Tool Grid">
+</p>
+
+<p align="center">
+  Organized tool categories for fast PDF workflow discovery.
+</p>
+
+---
+
+### Pricing
+
+<p align="center">
+  <img src="docs/images/pricing.png" width="90%" alt="PdfORBIT Pricing">
+</p>
+
+<p align="center">
+  Subscription tiers with Razorpay integration.
+</p>
 
 ---
 
