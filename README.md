@@ -10,7 +10,7 @@ Production-grade PDF SaaS built with Next.js, FastAPI, async workers, and Razorp
 
 Live product:
 
-- Website: https://pdforbit.app
+- Website: https://www.pdforbit.app
 - API: https://api.pdforbit.app
 
 Maintainer:
