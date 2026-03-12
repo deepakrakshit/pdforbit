@@ -34,32 +34,32 @@ AI disclosure:
 
 ## Table of Contents
 
-- Quick Start
-- Screenshots
-- Project Stats
-- Product Summary
-- Why This Project Exists
-- Production Highlights
-- Core Features
-- Tool Categories
-- Billing and Subscription System
-- Architecture Overview
-- Repository Structure
-- Technology Stack
-- Environment Variables
-- Local Development
-- Docker Compose
-- Testing
-- Deployment
-- Security and Privacy
-- AI Assistance
-- Open-Source Publishing Notes
-- Documentation Map
-- GitHub Presentation Notes
-- API Contract
-- Production Status
-- Roadmap
-- Maintainer Contact
+- [Quick Start](#quick-start)
+- [Screenshots](#screenshots)
+- [Project Stats](#project-stats)
+- [Product Summary](#product-summary)
+- [Why This Project Exists](#why-this-project-exists)
+- [Production Highlights](#production-highlights)
+- [Core Features](#core-features)
+- [Tool Categories](#tool-categories)
+- [Billing and Subscription System](#billing-and-subscription-system)
+- [Architecture Overview](#architecture-overview)
+- [Repository Structure](#repository-structure)
+- [Technology Stack](#technology-stack)
+- [Environment Variables](#environment-variables)
+- [Local Development](#local-development)
+- [Docker Compose](#docker-compose)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Security and Privacy](#security-and-privacy)
+- [AI Assistance](#ai-assistance)
+- [Open-Source Publishing Notes](#open-source-publishing-notes)
+- [Documentation Map](#documentation-map)
+- [GitHub Presentation Notes](#github-presentation-notes)
+- [API Contract](#api-contract)
+- [Production Status](#production-status)
+- [Roadmap](#roadmap)
+- [Maintainer Contact](#maintainer-contact)
 
 ---
 
