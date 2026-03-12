@@ -1,0 +1,12 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="400" rx="44" fill="#0B1220"/>
+  <g transform="translate(34 34)">
+    <rect width="332" height="332" rx="78" fill="#0F1B31"/>
+    <circle cx="166" cy="166" r="82" fill="#F25F5C"/>
+    <path d="M42 166C42 97.5167 97.5167 42 166 42C234.483 42 290 97.5167 290 166C290 234.483 234.483 290 166 290C97.5167 290 42 234.483 42 166Z" stroke="#9ED8DB" stroke-width="18"/>
+    <path d="M71 113C105.54 72.9174 164.914 58.6643 215.813 77.1596C266.712 95.6549 302.166 143.156 305.447 197.131" stroke="#F8F4E3" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="280" cy="203" r="15" fill="#F8F4E3"/>
+  </g>
+  <text x="420" y="186" fill="#F8F4E3" font-family="Orbitron, Arial, sans-serif" font-size="120" font-weight="800" letter-spacing="4">PdfORBIT</text>
+  <text x="424" y="252" fill="#9ED8DB" font-family="Barlow Condensed, Arial, sans-serif" font-size="44" font-weight="500" letter-spacing="6">ALL YOUR PDFS. ONE ORBIT.</text>
+</svg>

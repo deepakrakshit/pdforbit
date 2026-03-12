@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="1" stop-color="#132A46"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(238 184) rotate(52.2827) scale(293.344 354.182)">
+      <stop stop-color="#F25F5C" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F25F5C" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="238" cy="184" r="210" fill="url(#glow)"/>
+  <g transform="translate(86 146)">
+    <rect width="246" height="246" rx="58" fill="#0F1B31"/>
+    <circle cx="123" cy="123" r="60" fill="#F25F5C"/>
+    <path d="M31 123C31 72.1898 72.1898 31 123 31C173.81 31 215 72.1898 215 123C215 173.81 173.81 215 123 215C72.1898 215 31 173.81 31 123Z" stroke="#9ED8DB" stroke-width="14"/>
+    <path d="M53 84C78.6304 54.2556 122.684 43.6816 160.443 57.4008C198.202 71.12 224.508 106.362 226.944 146.411" stroke="#F8F4E3" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="208" cy="151" r="12" fill="#F8F4E3"/>
+  </g>
+  <text x="388" y="266" fill="#F8F4E3" font-family="Orbitron, Arial, sans-serif" font-size="124" font-weight="800" letter-spacing="4">PdfORBIT</text>
+  <text x="392" y="340" fill="#9ED8DB" font-family="Barlow Condensed, Arial, sans-serif" font-size="46" font-weight="500" letter-spacing="6">PDF TOOLS, OCR, EDITING, TRANSLATION, AND CONVERSION</text>
+  <text x="392" y="414" fill="#F8F4E3" font-family="Barlow Condensed, Arial, sans-serif" font-size="50" font-weight="600">All your PDFs. One orbit.</text>
+</svg>

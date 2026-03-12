@@ -1,0 +1,100 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: pdforbit
+      POSTGRES_USER: pdforbit
+      POSTGRES_PASSWORD: pdforbit
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+  api:
+    build:
+      context: ./backend
+    working_dir: /srv/backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://pdforbit:pdforbit@postgres:5432/pdforbit
+      REDIS_URL: redis://redis:6379/0
+      FILES_ROOT: /srv/backend/var/pdforbit
+      CORS_ORIGINS: http://localhost:3000,http://127.0.0.1:3000
+    command:
+      - sh
+      - -c
+      - alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "8000:8000"
+    volumes:
+      - pdforbit-storage:/srv/backend/var/pdforbit
+
+  worker:
+    build:
+      context: ./backend
+    working_dir: /srv/backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://pdforbit:pdforbit@postgres:5432/pdforbit
+      REDIS_URL: redis://redis:6379/0
+      FILES_ROOT: /srv/backend/var/pdforbit
+    command: ["python", "-m", "app.workers.rq_app"]
+    depends_on:
+      - postgres
+      - redis
+      - api
+    volumes:
+      - pdforbit-storage:/srv/backend/var/pdforbit
+
+  cleanup:
+    build:
+      context: ./backend
+    working_dir: /srv/backend
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: postgresql+psycopg://pdforbit:pdforbit@postgres:5432/pdforbit
+      REDIS_URL: redis://redis:6379/0
+      FILES_ROOT: /srv/backend/var/pdforbit
+    command: ["python", "-m", "app.workers.cleanup"]
+    depends_on:
+      - postgres
+      - redis
+      - api
+    volumes:
+      - pdforbit-storage:/srv/backend/var/pdforbit
+
+  frontend:
+    image: node:20-alpine
+    working_dir: /app
+    environment:
+      NEXT_PUBLIC_API_BASE: http://localhost:8000
+    command:
+      - sh
+      - -c
+      - npm install && npm run dev -- --hostname 0.0.0.0 --port 3000
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - frontend-node-modules:/app/node_modules
+
+volumes:
+  postgres-data:
+  redis-data:
+  pdforbit-storage:
+  frontend-node-modules:

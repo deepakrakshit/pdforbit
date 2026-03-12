@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+pdforbit_backend.egg-info/
+var/
+tests/
+test_output.txt
+test_results.txt
+pdforbit.db
